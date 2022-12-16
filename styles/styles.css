@@ -225,3 +225,502 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 62.5%;
+  font-family: "Sintony", Sans-Serif;
+  background-color: #e6e8e9;
+  color: #282c34;
+  text-align: center;
+}
+
+.wrapper {
+  width: 70%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2 {
+  font-family: "Source Sans Pro", Sans-Serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+button {
+  font-family: "Source Sans Pro", Sans-Serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section {
+  position: relative;
+  background-image: url(".././assets/matt-palmer-WHJ1VaQpPsg-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  padding-top: 30px;
+  position: relative;
+  z-index: 4;
+}
+
+img {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+ul {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 30px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+ul li {
+  width: 25%;
+}
+
+button {
+  background-color: #282c34;
+  color: white;
+  border: none;
+  width: 90%;
+  padding: 10px 0;
+  margin: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+[value=red]:hover,
+[value=red]:focus {
+  background-color: #ca2c29;
+}
+
+[value=orange]:hover,
+[value=orange]:focus {
+  background-color: #cf523b;
+}
+
+[value=yellow]:hover,
+[value=yellow]:focus {
+  background-color: #b8902a;
+}
+
+[value=green]:hover,
+[value=green]:focus {
+  background-color: #408074;
+}
+
+[value=blue]:hover,
+[value=blue]:focus {
+  background-color: #105470;
+}
+
+[value=indigo]:hover,
+[value=indigo]:focus {
+  background-color: #1d448b;
+}
+
+[value=violet]:hover,
+[value=violet]:focus {
+  background-color: #11264f;
+}
+
+[value=random]:hover,
+[value=random]:focus {
+  background-color: #e6e8e9;
+  color: #282c34;
+}
+
+.rainbow-container {
+  z-index: 1;
+  position: absolute;
+  bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rainbow-cutout {
+  height: 26vh;
+  aspect-ratio: 2/1;
+  border-radius: 26vh 26vh 0 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+}
+
+.background {
+  background-image: url(".././assets/matt-palmer-WHJ1VaQpPsg-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rainbow1 {
+  height: 29vh;
+  aspect-ratio: 2/1;
+  border-radius: 29vh 29vh 0 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  background-color: #cdd6cb;
+}
+
+.rainbow2 {
+  height: 32vh;
+  aspect-ratio: 2/1;
+  border-radius: 32vh 32vh 0 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  background-color: #11264f;
+}
+
+.rainbow3 {
+  height: 35vh;
+  aspect-ratio: 2/1;
+  border-radius: 35vh 35vh 0 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  background-color: #1d448b;
+}
+
+.rainbow4 {
+  height: 38vh;
+  aspect-ratio: 2/1;
+  border-radius: 38vh 38vh 0 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  background-color: #105470;
+}
+
+.rainbow5 {
+  height: 41vh;
+  aspect-ratio: 2/1;
+  border-radius: 41vh 41vh 0 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  background-color: #408074;
+}
+
+.rainbow6 {
+  height: 44vh;
+  aspect-ratio: 2/1;
+  border-radius: 44vh 44vh 0 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  background-color: #b8902a;
+}
+
+.rainbow7 {
+  height: 47vh;
+  aspect-ratio: 2/1;
+  border-radius: 47vh 47vh 0 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  background-color: #cf523b;
+}
+
+.rainbow8 {
+  height: 50vh;
+  aspect-ratio: 2/1;
+  border-radius: 50vh 50vh 0 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  background-color: #ca2c29;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .rainbow-cutout {
+    height: 24vh;
+    aspect-ratio: 2/1;
+    border-radius: 24vh 24vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow1 {
+    height: 26vh;
+    aspect-ratio: 2/1;
+    border-radius: 26vh 26vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow2 {
+    height: 28vh;
+    aspect-ratio: 2/1;
+    border-radius: 28vh 28vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow3 {
+    height: 30vh;
+    aspect-ratio: 2/1;
+    border-radius: 30vh 30vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow4 {
+    height: 32vh;
+    aspect-ratio: 2/1;
+    border-radius: 32vh 32vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow5 {
+    height: 34vh;
+    aspect-ratio: 2/1;
+    border-radius: 34vh 34vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow6 {
+    height: 36vh;
+    aspect-ratio: 2/1;
+    border-radius: 36vh 36vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow7 {
+    height: 38vh;
+    aspect-ratio: 2/1;
+    border-radius: 38vh 38vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow8 {
+    height: 40vh;
+    aspect-ratio: 2/1;
+    border-radius: 40vh 40vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  button {
+    font-size: 1.3rem;
+  }
+  .rainbow-container {
+    bottom: 80px;
+  }
+  .rainbow-cutout {
+    height: 12vh;
+    aspect-ratio: 2/1;
+    border-radius: 12vh 12vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow1 {
+    height: 16vh;
+    aspect-ratio: 2/1;
+    border-radius: 16vh 16vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow2 {
+    height: 18vh;
+    aspect-ratio: 2/1;
+    border-radius: 18vh 18vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow3 {
+    height: 20vh;
+    aspect-ratio: 2/1;
+    border-radius: 20vh 20vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow4 {
+    height: 22vh;
+    aspect-ratio: 2/1;
+    border-radius: 22vh 22vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow5 {
+    height: 24vh;
+    aspect-ratio: 2/1;
+    border-radius: 24vh 24vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow6 {
+    height: 26vh;
+    aspect-ratio: 2/1;
+    border-radius: 26vh 26vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow7 {
+    height: 28vh;
+    aspect-ratio: 2/1;
+    border-radius: 28vh 28vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow8 {
+    height: 30vh;
+    aspect-ratio: 2/1;
+    border-radius: 30vh 30vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  ul {
+    bottom: 10px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.7rem;
+  }
+  button {
+    font-size: 1.3rem;
+  }
+  .rainbow-container {
+    bottom: 0;
+  }
+  .rainbow-cutout {
+    height: 12vh;
+    aspect-ratio: 2/1;
+    border-radius: 12vh 12vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow1 {
+    height: 13vh;
+    aspect-ratio: 2/1;
+    border-radius: 13vh 13vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow2 {
+    height: 14vh;
+    aspect-ratio: 2/1;
+    border-radius: 14vh 14vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow3 {
+    height: 15vh;
+    aspect-ratio: 2/1;
+    border-radius: 15vh 15vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow4 {
+    height: 16vh;
+    aspect-ratio: 2/1;
+    border-radius: 16vh 16vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow5 {
+    height: 17vh;
+    aspect-ratio: 2/1;
+    border-radius: 17vh 17vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow6 {
+    height: 18vh;
+    aspect-ratio: 2/1;
+    border-radius: 18vh 18vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow7 {
+    height: 19vh;
+    aspect-ratio: 2/1;
+    border-radius: 19vh 19vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  .rainbow8 {
+    height: 20vh;
+    aspect-ratio: 2/1;
+    border-radius: 20vh 20vh 0 0;
+    position: absolute;
+    bottom: 0;
+  }
+  ul {
+    bottom: 40vh;
+  }
+  ul li {
+    width: 33%;
+  }
+}
