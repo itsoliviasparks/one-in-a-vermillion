@@ -59,3 +59,9 @@ const addRingToRainbow = (classToAdd, clickCount) => {
     const rainbowContainer = document.querySelector(".rainbow-container");
     rainbowContainer.appendChild(newRingDiv);
 };
+
+//restart page
+const restartButton = document.querySelector('.restart');
+restartButton.addEventListener("click", function () {
+  window.location.reload();
+});
