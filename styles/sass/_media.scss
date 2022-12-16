@@ -6,15 +6,16 @@
         height: $vh;
         border-radius: $vh $vh 0 0;
       }
-    .rainbow-cutout {@include rainbow-div(24vh);}
-    .rainbow1 {@include rainbow-div(26vh);}
-    .rainbow2 {@include rainbow-div(28vh);}
-    .rainbow3 {@include rainbow-div(30vh);}
-    .rainbow4 {@include rainbow-div(32vh);}
-    .rainbow5 {@include rainbow-div(34vh);}
-    .rainbow6 {@include rainbow-div(36vh);}
-    .rainbow7 {@include rainbow-div(38vh);}
+    .rainbow-cutout {@include rainbow-div(16vh);}
+    .rainbow1 {@include rainbow-div(19vh);}
+    .rainbow2 {@include rainbow-div(22vh);}
+    .rainbow3 {@include rainbow-div(25vh);}
+    .rainbow4 {@include rainbow-div(28vh);}
+    .rainbow5 {@include rainbow-div(31vh);}
+    .rainbow6 {@include rainbow-div(34vh);}
+    .rainbow7 {@include rainbow-div(37vh);}
     .rainbow8 {@include rainbow-div(40vh);}
+    form {bottom: 20px;}
 }
 
 /* Landscape phone to portrait tablet */
@@ -28,14 +29,14 @@
         height: $vh;
         border-radius: $vh $vh 0 0;
       }
-    .rainbow-cutout {@include rainbow-div(12vh);}
-    .rainbow1 {@include rainbow-div(16vh);}
-    .rainbow2 {@include rainbow-div(18vh);}
-    .rainbow3 {@include rainbow-div(20vh);}
-    .rainbow4 {@include rainbow-div(22vh);}
-    .rainbow5 {@include rainbow-div(24vh);}
-    .rainbow6 {@include rainbow-div(26vh);}
-    .rainbow7 {@include rainbow-div(28vh);}
+    .rainbow-cutout {@include rainbow-div(8.4vh);}
+    .rainbow1 {@include rainbow-div(11.1vh);}
+    .rainbow2 {@include rainbow-div(13.8vh);}
+    .rainbow3 {@include rainbow-div(16.5vh);}
+    .rainbow4 {@include rainbow-div(19.2vh);}
+    .rainbow5 {@include rainbow-div(21.9vh);}
+    .rainbow6 {@include rainbow-div(24.6vh);}
+    .rainbow7 {@include rainbow-div(27.3vh);}
     .rainbow8 {@include rainbow-div(30vh);}
     form {bottom: 10px;}
 }
@@ -50,15 +51,15 @@
         height: $vh;
         border-radius: $vh $vh 0 0;
       }
-    .rainbow-cutout {@include rainbow-div(12vh);}
-    .rainbow1 {@include rainbow-div(13vh);}
-    .rainbow2 {@include rainbow-div(14vh);}
-    .rainbow3 {@include rainbow-div(15vh);}
-    .rainbow4 {@include rainbow-div(16vh);}
-    .rainbow5 {@include rainbow-div(17vh);}
-    .rainbow6 {@include rainbow-div(18vh);}
-    .rainbow7 {@include rainbow-div(19vh);}
-    .rainbow8 {@include rainbow-div(20vh);}
+    .rainbow-cutout {@include rainbow-div(9.6vh);}
+    .rainbow1 {@include rainbow-div(11.9vh);}
+    .rainbow2 {@include rainbow-div(14.2vh);}
+    .rainbow3 {@include rainbow-div(16.5vh);}
+    .rainbow4 {@include rainbow-div(18.8vh);}
+    .rainbow5 {@include rainbow-div(21.1vh);}
+    .rainbow6 {@include rainbow-div(23.4vh);}
+    .rainbow7 {@include rainbow-div(25.7vh);}
+    .rainbow8 {@include rainbow-div(28vh);}
     form {
         bottom: 30vh;
         label {width: 40%;}
