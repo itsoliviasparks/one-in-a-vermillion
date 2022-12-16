@@ -2,69 +2,79 @@
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-    @mixin rainbow-div($vh) {
-        height: $vh;
-        border-radius: $vh $vh 0 0;
-      }
-    .rainbow-cutout {@include rainbow-div(16vh);}
-    .rainbow1 {@include rainbow-div(19vh);}
-    .rainbow2 {@include rainbow-div(22vh);}
-    .rainbow3 {@include rainbow-div(25vh);}
-    .rainbow4 {@include rainbow-div(28vh);}
-    .rainbow5 {@include rainbow-div(31vh);}
-    .rainbow6 {@include rainbow-div(34vh);}
-    .rainbow7 {@include rainbow-div(37vh);}
-    .rainbow8 {@include rainbow-div(40vh);}
-    form {bottom: 20px;}
+  //main
+  header {padding-top: 10px;}
+  form {bottom: 20px;}
+  //rainbow
+  @mixin rainbow-div($vh) {
+      height: $vh;
+      border-radius: $vh $vh 0 0;
+    }
+  .rainbow-cutout {@include rainbow-div(16vh);}
+  .rainbow1 {@include rainbow-div(19vh);}
+  .rainbow2 {@include rainbow-div(22vh);}
+  .rainbow3 {@include rainbow-div(25vh);}
+  .rainbow4 {@include rainbow-div(28vh);}
+  .rainbow5 {@include rainbow-div(31vh);}
+  .rainbow6 {@include rainbow-div(34vh);}
+  .rainbow7 {@include rainbow-div(37vh);}
+  .rainbow8 {@include rainbow-div(40vh);}
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    h1 {font-size: 5rem;}
-    h2,
-    .restart {
-      font-size: 4rem;
+  //main
+  h1 {font-size: 5rem;}
+  h2,
+  .restart {
+    font-size: 4rem;
+  }
+  h3 {font-size: 1.7rem;}
+  label {font-size: 1.3rem;}
+  .wrapper {width: 80%;}
+  header {padding-top: 10px;}
+  form {bottom: 10px;}
+  //rainbow
+  .rainbow-container {bottom: 80px;}
+  @mixin rainbow-div($vh) {
+      height: $vh;
+      border-radius: $vh $vh 0 0;
     }
-    h3 {font-size: 1.7rem;}
-    label {font-size: 1.3rem;}
-    .rainbow-container {bottom: 80px;}
-    @mixin rainbow-div($vh) {
-        height: $vh;
-        border-radius: $vh $vh 0 0;
-      }
-    .rainbow-cutout {@include rainbow-div(8.4vh);}
-    .rainbow1 {@include rainbow-div(11.1vh);}
-    .rainbow2 {@include rainbow-div(13.8vh);}
-    .rainbow3 {@include rainbow-div(16.5vh);}
-    .rainbow4 {@include rainbow-div(19.2vh);}
-    .rainbow5 {@include rainbow-div(21.9vh);}
-    .rainbow6 {@include rainbow-div(24.6vh);}
-    .rainbow7 {@include rainbow-div(27.3vh);}
-    .rainbow8 {@include rainbow-div(30vh);}
-    form {bottom: 10px;}
+  .rainbow-cutout {@include rainbow-div(8.4vh);}
+  .rainbow1 {@include rainbow-div(11.1vh);}
+  .rainbow2 {@include rainbow-div(13.8vh);}
+  .rainbow3 {@include rainbow-div(16.5vh);}
+  .rainbow4 {@include rainbow-div(19.2vh);}
+  .rainbow5 {@include rainbow-div(21.9vh);}
+  .rainbow6 {@include rainbow-div(24.6vh);}
+  .rainbow7 {@include rainbow-div(27.3vh);}
+  .rainbow8 {@include rainbow-div(30vh);}
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    h1 {font-size: 3.5rem;}
-    h2 {font-size: 2.7rem;}
-    label {font-size: 1.3rem;}
-    .rainbow-container {bottom: 0;}
-    @mixin rainbow-div($vh) {
-        height: $vh;
-        border-radius: $vh $vh 0 0;
-      }
-    .rainbow-cutout {@include rainbow-div(9.6vh);}
-    .rainbow1 {@include rainbow-div(11.9vh);}
-    .rainbow2 {@include rainbow-div(14.2vh);}
-    .rainbow3 {@include rainbow-div(16.5vh);}
-    .rainbow4 {@include rainbow-div(18.8vh);}
-    .rainbow5 {@include rainbow-div(21.1vh);}
-    .rainbow6 {@include rainbow-div(23.4vh);}
-    .rainbow7 {@include rainbow-div(25.7vh);}
-    .rainbow8 {@include rainbow-div(28vh);}
-    form {
-        bottom: 30vh;
-        label {width: 40%;}
+  //main
+  h1 {font-size: 3.5rem;}
+  h2 {font-size: 2.7rem;}
+  label {font-size: 1.3rem;}
+  .wrapper {width: 90%;}
+  form {
+    bottom: 30vh;
+    label {width: 40%;}
+  }
+  //rainbow
+  .rainbow-container {bottom: 0;}
+  @mixin rainbow-div($vh) {
+      height: $vh;
+      border-radius: $vh $vh 0 0;
     }
+  .rainbow-cutout {@include rainbow-div(9.6vh);}
+  .rainbow1 {@include rainbow-div(11.9vh);}
+  .rainbow2 {@include rainbow-div(14.2vh);}
+  .rainbow3 {@include rainbow-div(16.5vh);}
+  .rainbow4 {@include rainbow-div(18.8vh);}
+  .rainbow5 {@include rainbow-div(21.1vh);}
+  .rainbow6 {@include rainbow-div(23.4vh);}
+  .rainbow7 {@include rainbow-div(25.7vh);}
+  .rainbow8 {@include rainbow-div(28vh);}
 }

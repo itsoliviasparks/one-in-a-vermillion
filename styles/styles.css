@@ -543,6 +543,12 @@ label[for=random]:focus {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+  header {
+    padding-top: 10px;
+  }
+  form {
+    bottom: 20px;
+  }
   .rainbow-cutout {
     height: 16vh;
     border-radius: 16vh 16vh 0 0;
@@ -579,9 +585,6 @@ label[for=random]:focus {
     height: 40vh;
     border-radius: 40vh 40vh 0 0;
   }
-  form {
-    bottom: 20px;
-  }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -597,6 +600,15 @@ label[for=random]:focus {
   }
   label {
     font-size: 1.3rem;
+  }
+  .wrapper {
+    width: 80%;
+  }
+  header {
+    padding-top: 10px;
+  }
+  form {
+    bottom: 10px;
   }
   .rainbow-container {
     bottom: 80px;
@@ -637,9 +649,6 @@ label[for=random]:focus {
     height: 30vh;
     border-radius: 30vh 30vh 0 0;
   }
-  form {
-    bottom: 10px;
-  }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
@@ -651,6 +660,15 @@ label[for=random]:focus {
   }
   label {
     font-size: 1.3rem;
+  }
+  .wrapper {
+    width: 90%;
+  }
+  form {
+    bottom: 30vh;
+  }
+  form label {
+    width: 40%;
   }
   .rainbow-container {
     bottom: 0;
@@ -690,11 +708,5 @@ label[for=random]:focus {
   .rainbow8 {
     height: 28vh;
     border-radius: 28vh 28vh 0 0;
-  }
-  form {
-    bottom: 30vh;
-  }
-  form label {
-    width: 40%;
   }
 }
