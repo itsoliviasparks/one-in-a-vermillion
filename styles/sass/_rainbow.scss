@@ -1,20 +1,21 @@
 @use "var" as *;
 
 .rainbow-container {
-  z-index: 1;
   position: absolute;
+  z-index: 1;
   bottom: 100px;
   display: flex;
   justify-content: center;
 }
 
 @mixin rainbow-div($vh) {
+  position: absolute;
+  bottom: 0;
   height: $vh;
   aspect-ratio: 2/1;
   border-radius: $vh $vh 0 0;
+  border: none;
   background-color: transparent;
-  position: absolute;
-  bottom: 0;
 }
 
 .background {

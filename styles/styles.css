@@ -227,11 +227,11 @@ html {
 }
 
 html {
-  font-size: 62.5%;
   font-family: "Sintony", Sans-Serif;
-  background-color: #e6e8e9;
-  color: #282c34;
+  font-size: 62.5%;
   text-align: center;
+  color: #282c34;
+  background-color: #e6e8e9;
 }
 
 .wrapper {
@@ -242,9 +242,9 @@ html {
 
 img {
   display: block;
+  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 100%;
 }
 
 ul,
@@ -270,8 +270,8 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
   margin: 0;
+  font-size: 2rem;
 }
 
 form label {
@@ -279,15 +279,11 @@ form label {
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
+  color: white;
 }
 
 section {
   position: relative;
-  background-image: url(".././assets/matt-palmer-WHJ1VaQpPsg-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,18 +294,23 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
+  background-image: url(".././assets/matt-palmer-WHJ1VaQpPsg-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 header {
-  padding-top: 30px;
   position: relative;
   z-index: 13;
+  padding-top: 30px;
 }
 
 img {
   position: absolute;
-  bottom: 0;
   z-index: 11;
+  bottom: 0;
 }
 
 form {
@@ -329,11 +330,10 @@ form {
 }
 
 form label {
-  background-color: #282c34;
-  color: white;
   width: 20%;
-  padding: 10px 0;
   margin: 10px;
+  padding: 10px 0;
+  background-color: #282c34;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -380,8 +380,8 @@ label[for=random]:focus {
 }
 
 .rainbow-container {
-  z-index: 1;
   position: absolute;
+  z-index: 1;
   bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,92 +398,101 @@ label[for=random]:focus {
 }
 
 .rainbow-cutout {
+  position: absolute;
+  bottom: 0;
   height: 26vh;
   aspect-ratio: 2/1;
   border-radius: 26vh 26vh 0 0;
+  border: none;
   background-color: transparent;
-  position: absolute;
-  bottom: 0;
   z-index: 10;
 }
 
 .rainbow1 {
+  position: absolute;
+  bottom: 0;
   height: 29vh;
   aspect-ratio: 2/1;
   border-radius: 29vh 29vh 0 0;
+  border: none;
   background-color: transparent;
-  position: absolute;
-  bottom: 0;
   z-index: 9;
 }
 
 .rainbow2 {
+  position: absolute;
+  bottom: 0;
   height: 32vh;
   aspect-ratio: 2/1;
   border-radius: 32vh 32vh 0 0;
+  border: none;
   background-color: transparent;
-  position: absolute;
-  bottom: 0;
   z-index: 8;
 }
 
 .rainbow3 {
+  position: absolute;
+  bottom: 0;
   height: 35vh;
   aspect-ratio: 2/1;
   border-radius: 35vh 35vh 0 0;
+  border: none;
   background-color: transparent;
-  position: absolute;
-  bottom: 0;
   z-index: 7;
 }
 
 .rainbow4 {
+  position: absolute;
+  bottom: 0;
   height: 38vh;
   aspect-ratio: 2/1;
   border-radius: 38vh 38vh 0 0;
+  border: none;
   background-color: transparent;
-  position: absolute;
-  bottom: 0;
   z-index: 6;
 }
 
 .rainbow5 {
+  position: absolute;
+  bottom: 0;
   height: 41vh;
   aspect-ratio: 2/1;
   border-radius: 41vh 41vh 0 0;
+  border: none;
   background-color: transparent;
-  position: absolute;
-  bottom: 0;
   z-index: 5;
 }
 
 .rainbow6 {
+  position: absolute;
+  bottom: 0;
   height: 44vh;
   aspect-ratio: 2/1;
   border-radius: 44vh 44vh 0 0;
+  border: none;
   background-color: transparent;
-  position: absolute;
-  bottom: 0;
   z-index: 4;
 }
 
 .rainbow7 {
+  position: absolute;
+  bottom: 0;
   height: 47vh;
   aspect-ratio: 2/1;
   border-radius: 47vh 47vh 0 0;
+  border: none;
   background-color: transparent;
-  position: absolute;
-  bottom: 0;
   z-index: 3;
 }
 
 .rainbow8 {
+  position: absolute;
+  bottom: 0;
   height: 50vh;
   aspect-ratio: 2/1;
   border-radius: 50vh 50vh 0 0;
+  border: none;
   background-color: transparent;
-  position: absolute;
-  bottom: 0;
   z-index: 2;
 }
 
@@ -518,40 +527,43 @@ label[for=random]:focus {
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .rainbow-cutout {
-    height: 24vh;
-    border-radius: 24vh 24vh 0 0;
+    height: 16vh;
+    border-radius: 16vh 16vh 0 0;
   }
   .rainbow1 {
-    height: 26vh;
-    border-radius: 26vh 26vh 0 0;
+    height: 19vh;
+    border-radius: 19vh 19vh 0 0;
   }
   .rainbow2 {
+    height: 22vh;
+    border-radius: 22vh 22vh 0 0;
+  }
+  .rainbow3 {
+    height: 25vh;
+    border-radius: 25vh 25vh 0 0;
+  }
+  .rainbow4 {
     height: 28vh;
     border-radius: 28vh 28vh 0 0;
   }
-  .rainbow3 {
-    height: 30vh;
-    border-radius: 30vh 30vh 0 0;
-  }
-  .rainbow4 {
-    height: 32vh;
-    border-radius: 32vh 32vh 0 0;
-  }
   .rainbow5 {
+    height: 31vh;
+    border-radius: 31vh 31vh 0 0;
+  }
+  .rainbow6 {
     height: 34vh;
     border-radius: 34vh 34vh 0 0;
   }
-  .rainbow6 {
-    height: 36vh;
-    border-radius: 36vh 36vh 0 0;
-  }
   .rainbow7 {
-    height: 38vh;
-    border-radius: 38vh 38vh 0 0;
+    height: 37vh;
+    border-radius: 37vh 37vh 0 0;
   }
   .rainbow8 {
     height: 40vh;
     border-radius: 40vh 40vh 0 0;
+  }
+  form {
+    bottom: 20px;
   }
 }
 /* Landscape phone to portrait tablet */
@@ -572,36 +584,36 @@ label[for=random]:focus {
     bottom: 80px;
   }
   .rainbow-cutout {
-    height: 12vh;
-    border-radius: 12vh 12vh 0 0;
+    height: 8.4vh;
+    border-radius: 8.4vh 8.4vh 0 0;
   }
   .rainbow1 {
-    height: 16vh;
-    border-radius: 16vh 16vh 0 0;
+    height: 11.1vh;
+    border-radius: 11.1vh 11.1vh 0 0;
   }
   .rainbow2 {
-    height: 18vh;
-    border-radius: 18vh 18vh 0 0;
+    height: 13.8vh;
+    border-radius: 13.8vh 13.8vh 0 0;
   }
   .rainbow3 {
-    height: 20vh;
-    border-radius: 20vh 20vh 0 0;
+    height: 16.5vh;
+    border-radius: 16.5vh 16.5vh 0 0;
   }
   .rainbow4 {
-    height: 22vh;
-    border-radius: 22vh 22vh 0 0;
+    height: 19.2vh;
+    border-radius: 19.2vh 19.2vh 0 0;
   }
   .rainbow5 {
-    height: 24vh;
-    border-radius: 24vh 24vh 0 0;
+    height: 21.9vh;
+    border-radius: 21.9vh 21.9vh 0 0;
   }
   .rainbow6 {
-    height: 26vh;
-    border-radius: 26vh 26vh 0 0;
+    height: 24.6vh;
+    border-radius: 24.6vh 24.6vh 0 0;
   }
   .rainbow7 {
-    height: 28vh;
-    border-radius: 28vh 28vh 0 0;
+    height: 27.3vh;
+    border-radius: 27.3vh 27.3vh 0 0;
   }
   .rainbow8 {
     height: 30vh;
@@ -626,40 +638,40 @@ label[for=random]:focus {
     bottom: 0;
   }
   .rainbow-cutout {
-    height: 12vh;
-    border-radius: 12vh 12vh 0 0;
+    height: 9.6vh;
+    border-radius: 9.6vh 9.6vh 0 0;
   }
   .rainbow1 {
-    height: 13vh;
-    border-radius: 13vh 13vh 0 0;
+    height: 11.9vh;
+    border-radius: 11.9vh 11.9vh 0 0;
   }
   .rainbow2 {
-    height: 14vh;
-    border-radius: 14vh 14vh 0 0;
+    height: 14.2vh;
+    border-radius: 14.2vh 14.2vh 0 0;
   }
   .rainbow3 {
-    height: 15vh;
-    border-radius: 15vh 15vh 0 0;
+    height: 16.5vh;
+    border-radius: 16.5vh 16.5vh 0 0;
   }
   .rainbow4 {
-    height: 16vh;
-    border-radius: 16vh 16vh 0 0;
+    height: 18.8vh;
+    border-radius: 18.8vh 18.8vh 0 0;
   }
   .rainbow5 {
-    height: 17vh;
-    border-radius: 17vh 17vh 0 0;
+    height: 21.1vh;
+    border-radius: 21.1vh 21.1vh 0 0;
   }
   .rainbow6 {
-    height: 18vh;
-    border-radius: 18vh 18vh 0 0;
+    height: 23.4vh;
+    border-radius: 23.4vh 23.4vh 0 0;
   }
   .rainbow7 {
-    height: 19vh;
-    border-radius: 19vh 19vh 0 0;
+    height: 25.7vh;
+    border-radius: 25.7vh 25.7vh 0 0;
   }
   .rainbow8 {
-    height: 20vh;
-    border-radius: 20vh 20vh 0 0;
+    height: 28vh;
+    border-radius: 28vh 28vh 0 0;
   }
   form {
     bottom: 30vh;
