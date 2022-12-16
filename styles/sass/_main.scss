@@ -1,0 +1,148 @@
+@use "var" as *;
+
+//general styles
+html {
+    font-size: 62.5%;
+    font-family: $body-font;
+    background-color: $white;
+    color: $grey;
+    text-align: center;
+}
+
+.wrapper {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+//fonts
+h1,
+h2 {
+    font-family: $main-font;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+
+h3{
+    font-size: 2rem;
+    margin: 0;
+}
+
+button {
+    font-family: $main-font;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+//main section
+section {
+    position: relative;
+    background-image: url(".././assets/matt-palmer-WHJ1VaQpPsg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    padding-top: 30px;
+    position: relative;
+    z-index: 4;
+}
+
+img {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+ul {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    bottom: 30px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+        width: 25%;
+    }
+}
+
+button {
+    background-color: $grey;
+    color: white;
+    border: none;
+    width: 90%;
+    padding: 10px 0;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+[value="red"]:hover,
+[value="red"]:focus {
+    background-color: $red;
+}
+
+[value="orange"]:hover,
+[value="orange"]:focus {
+    background-color: $orange;
+}
+
+[value="yellow"]:hover,
+[value="yellow"]:focus {
+    background-color: $yellow;
+}
+
+[value="green"]:hover,
+[value="green"]:focus {
+    background-color: $green;
+}
+
+[value="blue"]:hover,
+[value="blue"]:focus {
+    background-color: $blue;
+}
+
+[value="indigo"]:hover,
+[value="indigo"]:focus {
+    background-color: $indigo;
+}
+
+[value="violet"]:hover,
+[value="violet"]:focus {
+    background-color: $violet;
+}
+
+[value="random"]:hover,
+[value="random"]:focus {
+    background-color: $white;
+    color: $grey;
+}

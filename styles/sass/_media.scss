@@ -1,0 +1,80 @@
+@use "var" as *;
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    @mixin rainbow-div($vh) {
+        height: $vh;
+        aspect-ratio: 2/1;
+        border-radius: $vh $vh 0 0;
+        // background-color: transparent;
+        position: absolute;
+        bottom: 0;
+      }
+    .rainbow-cutout { @include rainbow-div(24vh); }
+    .rainbow1 { @include rainbow-div(26vh); }
+    .rainbow2 { @include rainbow-div(28vh); }
+    .rainbow3 { @include rainbow-div(30vh); }
+    .rainbow4 { @include rainbow-div(32vh); }
+    .rainbow5 { @include rainbow-div(34vh); }
+    .rainbow6 { @include rainbow-div(36vh); }
+    .rainbow7 { @include rainbow-div(38vh); }
+    .rainbow8 { @include rainbow-div(40vh); }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    h1 { font-size: 5rem; }
+    h2 { font-size: 4rem; }
+    h3 { font-size: 1.7rem; }
+    button { font-size: 1.3rem; }
+    .rainbow-container { bottom: 80px; }
+    @mixin rainbow-div($vh) {
+        height: $vh;
+        aspect-ratio: 2/1;
+        border-radius: $vh $vh 0 0;
+        // background-color: transparent;
+        position: absolute;
+        bottom: 0;
+      }
+    .rainbow-cutout { @include rainbow-div(12vh); }
+    .rainbow1 { @include rainbow-div(16vh); }
+    .rainbow2 { @include rainbow-div(18vh); }
+    .rainbow3 { @include rainbow-div(20vh); }
+    .rainbow4 { @include rainbow-div(22vh); }
+    .rainbow5 { @include rainbow-div(24vh); }
+    .rainbow6 { @include rainbow-div(26vh); }
+    .rainbow7 { @include rainbow-div(28vh); }
+    .rainbow8 { @include rainbow-div(30vh); }
+    ul { bottom: 10px;}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    h1 { font-size: 3.5rem; }
+    h2 { font-size: 2.7rem; }
+    button { font-size: 1.3rem; }
+    .rainbow-container { bottom: 0; }
+    @mixin rainbow-div($vh) {
+        height: $vh;
+        aspect-ratio: 2/1;
+        border-radius: $vh $vh 0 0;
+        // background-color: transparent;
+        position: absolute;
+        bottom: 0;
+      }
+    .rainbow-cutout { @include rainbow-div(12vh); }
+    .rainbow1 { @include rainbow-div(13vh); }
+    .rainbow2 { @include rainbow-div(14vh); }
+    .rainbow3 { @include rainbow-div(15vh); }
+    .rainbow4 { @include rainbow-div(16vh); }
+    .rainbow5 { @include rainbow-div(17vh); }
+    .rainbow6 { @include rainbow-div(18vh); }
+    .rainbow7 { @include rainbow-div(19vh); }
+    .rainbow8 { @include rainbow-div(20vh); }
+    ul {
+        bottom: 40vh;
+        li {
+            width: 33%;
+        }
+    }
+}
