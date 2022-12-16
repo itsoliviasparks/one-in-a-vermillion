@@ -274,7 +274,7 @@ h3 {
   margin: 0;
 }
 
-button {
+form label {
   font-family: "Source Sans Pro", Sans-Serif;
   font-size: 2rem;
   text-transform: uppercase;
@@ -303,18 +303,18 @@ section {
 header {
   padding-top: 30px;
   position: relative;
-  z-index: 4;
+  z-index: 13;
 }
 
 img {
   position: absolute;
   bottom: 0;
-  z-index: 2;
+  z-index: 11;
 }
 
-ul {
+form {
   position: absolute;
-  z-index: 3;
+  z-index: 12;
   right: 0;
   bottom: 30px;
   left: 0;
@@ -327,58 +327,54 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-ul li {
-  width: 25%;
-}
 
-button {
+form label {
   background-color: #282c34;
   color: white;
-  border: none;
-  width: 90%;
+  width: 20%;
   padding: 10px 0;
   margin: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-[value=red]:hover,
-[value=red]:focus {
+label[for=red]:hover,
+label[for=red]:focus {
   background-color: #ca2c29;
 }
 
-[value=orange]:hover,
-[value=orange]:focus {
+label[for=orange]:hover,
+label[for=orange]:focus {
   background-color: #cf523b;
 }
 
-[value=yellow]:hover,
-[value=yellow]:focus {
+label[for=yellow]:hover,
+label[for=yellow]:focus {
   background-color: #b8902a;
 }
 
-[value=green]:hover,
-[value=green]:focus {
+label[for=green]:hover,
+label[for=green]:focus {
   background-color: #408074;
 }
 
-[value=blue]:hover,
-[value=blue]:focus {
+label[for=blue]:hover,
+label[for=blue]:focus {
   background-color: #105470;
 }
 
-[value=indigo]:hover,
-[value=indigo]:focus {
+label[for=indigo]:hover,
+label[for=indigo]:focus {
   background-color: #1d448b;
 }
 
-[value=violet]:hover,
-[value=violet]:focus {
+label[for=violet]:hover,
+label[for=violet]:focus {
   background-color: #11264f;
 }
 
-[value=random]:hover,
-[value=random]:focus {
+label[for=random]:hover,
+label[for=random]:focus {
   background-color: #e6e8e9;
   color: #282c34;
 }
@@ -395,6 +391,12 @@ button {
           justify-content: center;
 }
 
+.background {
+  background-image: url(".././assets/matt-palmer-WHJ1VaQpPsg-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .rainbow-cutout {
   height: 26vh;
   aspect-ratio: 2/1;
@@ -402,12 +404,7 @@ button {
   background-color: transparent;
   position: absolute;
   bottom: 0;
-}
-
-.background {
-  background-image: url(".././assets/matt-palmer-WHJ1VaQpPsg-unsplash.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  z-index: 10;
 }
 
 .rainbow1 {
@@ -417,7 +414,7 @@ button {
   background-color: transparent;
   position: absolute;
   bottom: 0;
-  background-color: #cdd6cb;
+  z-index: 9;
 }
 
 .rainbow2 {
@@ -427,7 +424,7 @@ button {
   background-color: transparent;
   position: absolute;
   bottom: 0;
-  background-color: #11264f;
+  z-index: 8;
 }
 
 .rainbow3 {
@@ -437,7 +434,7 @@ button {
   background-color: transparent;
   position: absolute;
   bottom: 0;
-  background-color: #1d448b;
+  z-index: 7;
 }
 
 .rainbow4 {
@@ -447,7 +444,7 @@ button {
   background-color: transparent;
   position: absolute;
   bottom: 0;
-  background-color: #105470;
+  z-index: 6;
 }
 
 .rainbow5 {
@@ -457,7 +454,7 @@ button {
   background-color: transparent;
   position: absolute;
   bottom: 0;
-  background-color: #408074;
+  z-index: 5;
 }
 
 .rainbow6 {
@@ -467,7 +464,7 @@ button {
   background-color: transparent;
   position: absolute;
   bottom: 0;
-  background-color: #b8902a;
+  z-index: 4;
 }
 
 .rainbow7 {
@@ -477,7 +474,7 @@ button {
   background-color: transparent;
   position: absolute;
   bottom: 0;
-  background-color: #cf523b;
+  z-index: 3;
 }
 
 .rainbow8 {
@@ -487,73 +484,74 @@ button {
   background-color: transparent;
   position: absolute;
   bottom: 0;
+  z-index: 2;
+}
+
+.red {
   background-color: #ca2c29;
+}
+
+.orange {
+  background-color: #cf523b;
+}
+
+.yellow {
+  background-color: #b8902a;
+}
+
+.green {
+  background-color: #408074;
+}
+
+.blue {
+  background-color: #105470;
+}
+
+.indigo {
+  background-color: #1d448b;
+}
+
+.violet {
+  background-color: #11264f;
 }
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .rainbow-cutout {
     height: 24vh;
-    aspect-ratio: 2/1;
     border-radius: 24vh 24vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow1 {
     height: 26vh;
-    aspect-ratio: 2/1;
     border-radius: 26vh 26vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow2 {
     height: 28vh;
-    aspect-ratio: 2/1;
     border-radius: 28vh 28vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow3 {
     height: 30vh;
-    aspect-ratio: 2/1;
     border-radius: 30vh 30vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow4 {
     height: 32vh;
-    aspect-ratio: 2/1;
     border-radius: 32vh 32vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow5 {
     height: 34vh;
-    aspect-ratio: 2/1;
     border-radius: 34vh 34vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow6 {
     height: 36vh;
-    aspect-ratio: 2/1;
     border-radius: 36vh 36vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow7 {
     height: 38vh;
-    aspect-ratio: 2/1;
     border-radius: 38vh 38vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow8 {
     height: 40vh;
-    aspect-ratio: 2/1;
     border-radius: 40vh 40vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
 }
 /* Landscape phone to portrait tablet */
@@ -567,7 +565,7 @@ button {
   h3 {
     font-size: 1.7rem;
   }
-  button {
+  label {
     font-size: 1.3rem;
   }
   .rainbow-container {
@@ -575,68 +573,41 @@ button {
   }
   .rainbow-cutout {
     height: 12vh;
-    aspect-ratio: 2/1;
     border-radius: 12vh 12vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow1 {
     height: 16vh;
-    aspect-ratio: 2/1;
     border-radius: 16vh 16vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow2 {
     height: 18vh;
-    aspect-ratio: 2/1;
     border-radius: 18vh 18vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow3 {
     height: 20vh;
-    aspect-ratio: 2/1;
     border-radius: 20vh 20vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow4 {
     height: 22vh;
-    aspect-ratio: 2/1;
     border-radius: 22vh 22vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow5 {
     height: 24vh;
-    aspect-ratio: 2/1;
     border-radius: 24vh 24vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow6 {
     height: 26vh;
-    aspect-ratio: 2/1;
     border-radius: 26vh 26vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow7 {
     height: 28vh;
-    aspect-ratio: 2/1;
     border-radius: 28vh 28vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow8 {
     height: 30vh;
-    aspect-ratio: 2/1;
     border-radius: 30vh 30vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
-  ul {
+  form {
     bottom: 10px;
   }
 }
@@ -648,7 +619,7 @@ button {
   h2 {
     font-size: 2.7rem;
   }
-  button {
+  label {
     font-size: 1.3rem;
   }
   .rainbow-container {
@@ -656,71 +627,44 @@ button {
   }
   .rainbow-cutout {
     height: 12vh;
-    aspect-ratio: 2/1;
     border-radius: 12vh 12vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow1 {
     height: 13vh;
-    aspect-ratio: 2/1;
     border-radius: 13vh 13vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow2 {
     height: 14vh;
-    aspect-ratio: 2/1;
     border-radius: 14vh 14vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow3 {
     height: 15vh;
-    aspect-ratio: 2/1;
     border-radius: 15vh 15vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow4 {
     height: 16vh;
-    aspect-ratio: 2/1;
     border-radius: 16vh 16vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow5 {
     height: 17vh;
-    aspect-ratio: 2/1;
     border-radius: 17vh 17vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow6 {
     height: 18vh;
-    aspect-ratio: 2/1;
     border-radius: 18vh 18vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow7 {
     height: 19vh;
-    aspect-ratio: 2/1;
     border-radius: 19vh 19vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
   .rainbow8 {
     height: 20vh;
-    aspect-ratio: 2/1;
     border-radius: 20vh 20vh 0 0;
-    position: absolute;
-    bottom: 0;
   }
-  ul {
-    bottom: 40vh;
+  form {
+    bottom: 30vh;
   }
-  ul li {
-    width: 33%;
+  form label {
+    width: 40%;
   }
 }

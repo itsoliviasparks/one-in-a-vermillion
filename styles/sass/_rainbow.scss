@@ -17,53 +17,61 @@
   bottom: 0;
 }
 
-.rainbow-cutout {
-  @include rainbow-div(26vh);
-}
-
 .background {
   background-image: url(".././assets/matt-palmer-WHJ1VaQpPsg-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.rainbow-cutout {
+  @include rainbow-div(26vh);
+  z-index: 10;
+}
+
 .rainbow1 {
   @include rainbow-div(29vh);
-  background-color: $random;
+  z-index: 9;
 }
 
 .rainbow2 {
   @include rainbow-div(32vh);
-  background-color: $violet;
+  z-index: 8;
 }
 
 .rainbow3 {
   @include rainbow-div(35vh);
-  background-color: $indigo;
+  z-index: 7;
 }
 
 .rainbow4 {
   @include rainbow-div(38vh);
-  background-color: $blue;
+  z-index: 6;
 }
 
 .rainbow5 {
   @include rainbow-div(41vh);
-  background-color: $green;
+  z-index: 5;  
 }
 
 .rainbow6 {
   @include rainbow-div(44vh);
-  background-color: $yellow;
+  z-index: 4;
 }
 
 .rainbow7 {
-    @include rainbow-div(47vh);
-    background-color: $orange;
-  }
+  @include rainbow-div(47vh);
+  z-index: 3;
+}
 
 .rainbow8 {
   @include rainbow-div(50vh);
-  background-color: $red;
+  z-index: 2;
 }
 
+.red {background-color: $red;}
+.orange {background-color: $orange;}
+.yellow {background-color: $yellow;}
+.green {background-color: $green;}
+.blue {background-color: $blue;}
+.indigo {background-color: $indigo;}
+.violet {background-color: $violet;}

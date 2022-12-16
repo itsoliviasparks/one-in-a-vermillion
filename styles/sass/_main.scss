@@ -50,7 +50,7 @@ h3{
     margin: 0;
 }
 
-button {
+form label {
     font-family: $main-font;
     font-size: 2rem;
     text-transform: uppercase;
@@ -73,76 +73,74 @@ section {
 header {
     padding-top: 30px;
     position: relative;
-    z-index: 4;
+    z-index: 13;
 }
 
 img {
     position: absolute;
     bottom: 0;
-    z-index: 2;
+    z-index: 11;
 }
 
-ul {
+//form
+form {
     position: absolute;
-    z-index: 3;
+    z-index: 12;
     right: 0;
     bottom: 30px;
     left: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    li {
-        width: 25%;
-    }
 }
 
-button {
+form label {
     background-color: $grey;
     color: white;
-    border: none;
-    width: 90%;
+    width: 20%;
     padding: 10px 0;
     margin: 10px;
     transition: 0.3s;
 }
 
-[value="red"]:hover,
-[value="red"]:focus {
+//button hover/focus states
+label[for="red"]:hover,
+label[for="red"]:focus {
     background-color: $red;
 }
 
-[value="orange"]:hover,
-[value="orange"]:focus {
+label[for="orange"]:hover,
+label[for="orange"]:focus {
     background-color: $orange;
 }
 
-[value="yellow"]:hover,
-[value="yellow"]:focus {
+label[for="yellow"]:hover,
+label[for="yellow"]:focus {
     background-color: $yellow;
 }
 
-[value="green"]:hover,
-[value="green"]:focus {
+label[for="green"]:hover,
+label[for="green"]:focus {
     background-color: $green;
 }
 
-[value="blue"]:hover,
-[value="blue"]:focus {
+label[for="blue"]:hover,
+label[for="blue"]:focus {
     background-color: $blue;
 }
 
-[value="indigo"]:hover,
-[value="indigo"]:focus {
+label[for="indigo"]:hover,
+label[for="indigo"]:focus {
     background-color: $indigo;
 }
 
-[value="violet"]:hover,
-[value="violet"]:focus {
+label[for="violet"]:hover,
+label[for="violet"]:focus {
     background-color: $violet;
 }
 
-[value="random"]:hover,
-[value="random"]:focus {
+label[for="random"]:hover,
+label[for="random"]:focus {
     background-color: $white;
     color: $grey;
 }
