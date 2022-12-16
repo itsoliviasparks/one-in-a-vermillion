@@ -265,7 +265,8 @@ h1 {
   font-size: 7rem;
 }
 
-h2 {
+h2,
+.restart {
   font-size: 5rem;
 }
 
@@ -377,6 +378,22 @@ label[for=random]:hover,
 label[for=random]:focus {
   background-color: #e6e8e9;
   color: #282c34;
+}
+
+.restart {
+  position: absolute;
+  z-index: 12;
+  right: 30px;
+  bottom: 30px;
+  border: none;
+  color: #282c34;
+  background-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.restart:hover, .restart:focus {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 
 .rainbow-container {
@@ -571,7 +588,8 @@ label[for=random]:focus {
   h1 {
     font-size: 5rem;
   }
-  h2 {
+  h2,
+.restart {
     font-size: 4rem;
   }
   h3 {

@@ -40,7 +40,8 @@ h1 {
     font-size: 7rem;
 }
 
-h2 {
+h2,
+.restart {
     font-size: 5rem;
 }
 
@@ -143,4 +144,20 @@ label[for="random"]:hover,
 label[for="random"]:focus {
     background-color: $white;
     color: $grey;
+}
+
+//restart button
+.restart {
+    position: absolute;
+    z-index: 12;
+    right: 30px;
+    bottom: 30px;
+    border: none;
+    color: $grey;
+    background-color: transparent;
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        transform: rotate(-360deg);
+    }
 }

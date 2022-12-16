@@ -21,7 +21,10 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
     h1 {font-size: 5rem;}
-    h2 {font-size: 4rem;}
+    h2,
+    .restart {
+      font-size: 4rem;
+    }
     h3 {font-size: 1.7rem;}
     label {font-size: 1.3rem;}
     .rainbow-container {bottom: 80px;}
