@@ -55,7 +55,7 @@ const addRainbowCutout = () => {
 
 const addRingToRainbow = (classToAdd, clickCount) => {
     const newRingDiv = document.createElement("div");
-    newRingDiv.innerHTML = `<div class="rainbow${clickCount} ${classToAdd}"></div>`;
+    newRingDiv.classList.add(`rainbow${clickCount}`, `${classToAdd}`);
     const rainbowContainer = document.querySelector(".rainbow-container");
     rainbowContainer.appendChild(newRingDiv);
 };
