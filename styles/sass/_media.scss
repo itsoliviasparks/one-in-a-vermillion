@@ -3,6 +3,7 @@
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   //main
+  section {height:100%}
   header {padding-top: 10px;}
   form {bottom: 20px;}
   //rainbow
@@ -30,6 +31,7 @@
     font-size: 4rem;
   }
   h3 {font-size: 1.7rem;}
+  section {height:100%}
   label {font-size: 1.3rem;}
   .wrapper {width: 80%;}
   header {padding-top: 10px;}
@@ -58,6 +60,7 @@
   h2 {font-size: 2.7rem;}
   label {font-size: 1.3rem;}
   .wrapper {width: 90%;}
+  section {height:100%}
   form {
     bottom: 30vh;
     label {width: 40%;}
