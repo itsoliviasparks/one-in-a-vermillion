@@ -20,9 +20,11 @@ rainbow.getRandomInArr = (arr) => {
 };
 
 //restart page
-rainbow.restart = rainbow.restartButton.addEventListener("click", () => {
-  window.location.reload();
-});
+rainbow.restart = () => {
+  rainbow.restartButton.addEventListener("click", () => {
+    window.location.reload();
+  });
+};
 
 //adding rings & cutout to rainbow
 rainbow.addRingToRainbow = (classToAdd, clickCount) => {
@@ -51,17 +53,19 @@ rainbow.findClassToAdd = () => {
 
 //getting value that user picked
 //& number of user clicks (limited to 8, b/c there are 8 rings on rainbow)
-rainbow.getUserChoiceAndClickCount = rainbow.radioButton.forEach(radio => {
-  radio.addEventListener('click', function () {
-    rainbow.userColorChoice = radio.value
-    if (rainbow.clickCount < 8) {
-      rainbow.clickCount++
-    } else {
-      rainbow.clickCount = 1
-    };
-    rainbow.findClassToAdd(rainbow.userColorChoice);
+rainbow.getUserChoiceAndClickCount = () => {
+  rainbow.radioButton.forEach(radio => {
+    radio.addEventListener('click', () => {
+      rainbow.userColorChoice = radio.value
+      if (rainbow.clickCount < 8) {
+        rainbow.clickCount++
+      } else {
+        rainbow.clickCount = 1
+      };
+      rainbow.findClassToAdd(rainbow.userColorChoice);
+    });
   });
-});
+};
 
 rainbow.init = () => {
   rainbow.getUserChoiceAndClickCount();

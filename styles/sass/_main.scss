@@ -60,12 +60,17 @@ form label {
 }
 
 //main section
+main {
+    height: 100vh;
+    height: 100svh;
+}
+
 section {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     background-image: url(".././assets/matt-palmer-WHJ1VaQpPsg-unsplash.jpg");
     background-size: cover;
     background-position: center;

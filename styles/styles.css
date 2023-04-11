@@ -283,6 +283,11 @@ form label {
   color: white;
 }
 
+main {
+  height: 100vh;
+  height: 100svh;
+}
+
 section {
   position: relative;
   display: -webkit-box;
@@ -295,7 +300,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 100%;
   background-image: url(".././assets/matt-palmer-WHJ1VaQpPsg-unsplash.jpg");
   background-size: cover;
   background-position: center;
@@ -543,6 +548,9 @@ label[for=random]:focus {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+  section {
+    height: 100%;
+  }
   header {
     padding-top: 10px;
   }
@@ -592,11 +600,14 @@ label[for=random]:focus {
     font-size: 5rem;
   }
   h2,
-.restart {
+  .restart {
     font-size: 4rem;
   }
   h3 {
     font-size: 1.7rem;
+  }
+  section {
+    height: 100%;
   }
   label {
     font-size: 1.3rem;
@@ -663,6 +674,9 @@ label[for=random]:focus {
   }
   .wrapper {
     width: 90%;
+  }
+  section {
+    height: 100%;
   }
   form {
     bottom: 30vh;
