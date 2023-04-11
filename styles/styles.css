@@ -286,6 +286,7 @@ form label {
 main {
   height: 100vh;
   height: 100svh;
+  overflow: hidden;
 }
 
 section {
@@ -664,10 +665,10 @@ label[for=random]:focus {
 /* Landscape phones and down */
 @media (max-width: 480px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }
   h2 {
-    font-size: 2.7rem;
+    font-size: 2.3rem;
   }
   label {
     font-size: 1.3rem;
@@ -679,7 +680,7 @@ label[for=random]:focus {
     height: 100%;
   }
   form {
-    bottom: 30vh;
+    bottom: 20vh;
   }
   form label {
     width: 40%;
