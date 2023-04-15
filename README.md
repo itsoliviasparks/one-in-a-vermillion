@@ -1,23 +1,31 @@
 # One in a Vermillion 🌈
-A cute <em>punny</em> little web app that creates a rainbow based on user input.
-
 <a href="https://itsoliviasparks-one-in-a-vermillion.netlify.app">Live Site</a>
 
 ## About
-- An exercise in manipulating the DOM exclusively with vanilla JavaScript (jQuery Free Zone! 🚫)
+A cute <em>punny</em> little web app that creates a rainbow based on user input.
 
-## Features
-- Utilizes JavaScript, CSS/SCSS, and HTML
+## Project Purpose & Goal
+One in a Vermillion is an exercise in manipulating the DOM exclusively with vanilla JavaScript (Library Free Zone! 🚫)
+
+## Tech Stack
+Vanilla JavaScript, SCSS, & HTML
 
 ## Development Process
-- With a broad project brief, I always like to have a little fun!
-- I've been curious about drawing with CSS, so I took this project as an opportunity to dip my toe, ever-so-slightly, in by drawing a simple rainbow
+I've been curious about drawing with CSS for a while, so I took this project as an opportunity to dip my toe, ever-so-slightly, into it by drawing a simple rainbow.
 
-## Next Steps
-- I was able to draw a semi-circle for each arch of the rainbow, but could not figure out how to cut out a smaller semi-circle on the flat edge to create an arch.
-To solve, I've added an additional div with a background matching the total site.
-Although the backgrounds do not line up perfectly, I don't think the visual is distracting.
-- I would love to do more research into creating shapes in CSS to be able to successfully execute a true arch shape, and not beed the additional div for the centre of the semi-circle.
-- The height of the site is set to 100vh.
-On mobile this is causing an issue where the height is set to the total hight of the device screen, instead of accounting for the browser menu & the inner height.
-Looking into correcting this for future.
+## Problems Solved
+### Learning to Draw with CSS
+I was able to create a semi-circle for each arch of the rainbow using CSS, but I could not figure out how to "cut out" a smaller semi-circle on the flat edge to create an arch. As a work-around, I've added an additional `div` with a background image that matches the sites background.
+
+Going forward, I would love to do more research into creating shapes in CSS. I'd like to be able to successfully execute a true arch shape, without needed the additional `div` to create the centre of the semi-circle.
+
+### 100vh on Mobile
+Located in `sass/_main.scss`
+```
+main {
+    height: 100vh;
+    height: 100svh;
+    overflow: hidden;
+}
+```
+When I first coded this project, I set the height of the site is set to be `100vh`. On mobile this caused an issue where the mobile browser causes vertical scroll. After researching this issue, I learned that `100svh` is a much better option to achieve a full page on mobile. Because `svh` is not supported by all browsers I've kept a `vh` as a backup.
