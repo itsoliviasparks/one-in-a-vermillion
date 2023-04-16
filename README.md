@@ -2,7 +2,7 @@
 <a href="https://itsoliviasparks-one-in-a-vermillion.netlify.app">Live Site</a>
 
 ## About
-A cute <em>punny</em> little web app that creates a rainbow based on user input.
+A cute <em>punny</em> little web app, that creates a rainbow based on user input.
 
 ## Project Purpose & Goal
 One in a Vermillion is an exercise in manipulating the DOM exclusively with vanilla JavaScript (Library Free Zone! 🚫)
@@ -28,4 +28,4 @@ main {
     overflow: hidden;
 }
 ```
-When I first coded this project, I set the height of the site is set to be `100vh`. On mobile this caused an issue where the mobile browser causes vertical scroll. After researching this issue, I learned that `100svh` is a much better option to achieve a full page on mobile. Because `svh` is not supported by all browsers I've kept a `vh` as a backup.
+When I first coded this project, the site's height was set to `100vh`. On mobile, this caused an issue where the browser displayed a vertical scroll. After researching this issue, I learned that `100svh` is a much better option to achieve a full page on mobile. Because `svh` is not supported by all browsers I've kept a `vh` as a backup.
