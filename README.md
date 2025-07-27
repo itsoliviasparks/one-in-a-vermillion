@@ -1,5 +1,5 @@
 # One in a Vermillion 🌈
-<a href="https://itsoliviasparks-one-in-a-vermillion.netlify.app">🔗 Live Site</a>
+<a href="https://itsoliviasparks.github.io/one-in-a-vermillion/">🔗 Live Site</a>
 
 ## About
 A cute <em>punny</em> little web app, that creates a rainbow based on user input.
